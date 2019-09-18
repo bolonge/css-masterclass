@@ -87,6 +87,7 @@ li:hover {
 .grid .grid__item:nth-child(2) {
   grid-area: span 2 / span 2;
   background-image: url(https://i.pinimg.com/564x/68/40/74/684074f39ea9fc5fb844553e2d65f3c7.jpg);
+  cursor: pointer;
 }
 
 .grid .grid__item:nth-child(3) {
