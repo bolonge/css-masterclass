@@ -135,9 +135,7 @@ h6 {
   text-align: center;
 }
 .recipes {
-  margin-top: 25px;
-  padding-top: 25px;
-  min-height: calc(35vh - 100px);
+  max-height: 20vh;
   border-top: var(--border);
   overflow: scroll;
 }
@@ -155,4 +153,10 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 15px var(--padding);
+}
+
+.footer {
+  margin-top: 20px;
+  height: 100px;
+  background-color: #bdc3c7;
 }
