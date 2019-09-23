@@ -71,13 +71,14 @@ body {
 .main .match-list__button {
   background-image: var(--gradientBackground);
   color: white;
+  font-size: 10px;
   box-shadow: var(--boxShadow);
   text-transform: uppercase;
   padding: 30px 60px;
   border: none;
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  right: 20px;
 }
 
 .header__icons span {
