@@ -12,13 +12,117 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+body,
+html {
   margin: 0;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #fafafc;
-  padding: 0 15px;
+  background-color: #f8ffff;
+}
+
+.header {
+  padding: 40px 60px;
+}
+
+.header .header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.header .header__munu {
+  font-weight: 600;
+  transform: rotate(90deg);
+  font-size: 22px;
+}
+.header .header__title {
+  font-weight: 400;
+}
+.gallery {
+  background-color: #eeeff5;
+  padding: 40px;
+}
+
+.gallery__wrapper,
+.content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery .gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.gallery__wrapper .gallery__item {
+  height: 25vh;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.gallery__wrapper .gallery__item:first-child {
+  background-image: url(https://i.pinimg.com/564x/41/19/71/41197190fe7cda25af44c96b18ea6ef3.jpg);
+}
+.gallery__wrapper .gallery__item:nth-child(2) {
+  background-image: url(https://i.pinimg.com/236x/3d/f7/3c/3df73c5b7c61da5c9f535e8c59fe3431.jpg);
+}
+.gallery__wrapper .gallery__item:last-child {
+  background-image: url(https://i.pinimg.com/564x/47/6b/97/476b9725435f67efacf927d2fa209624.jpg);
+}
+.content {
+  margin-top: 50px;
+  padding: 0px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.content .content__title {
+  text-transform: uppercase;
+}
+
+.content__description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.content .content__column {
+  display: grid;
+  gap: 30px;
+}
+
+.content .content__datalist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 30px 0;
+}
+
+.content__datalist .datalist__name {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+.content__datalist .datalist__value {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+}
+
+.content .content__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: inherit;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #3498db;
 }

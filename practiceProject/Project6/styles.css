@@ -59,14 +59,14 @@ body {
 
 .portfolio .portfolio__item {
   display: flex;
+  cursor: pointer;
   align-items: flex-end;
   justify-content: center;
   background-image: url(https://i.pinimg.com/564x/79/aa/ef/79aaefe963a7b82e4e37da7a89b7f6b4.jpg);
   background-size: cover;
   background-position: center center;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 38px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
 .portfolio::-webkit-scrollbar {
   display: none;
 }
@@ -76,13 +76,6 @@ body {
   background-color: white;
   width: 100%;
   padding: 30px 0;
-}
-
-.item__info .item__title {
-  margin-bottom: 10px;
-}
-
-.item__info .item__subtitle {
 }
 
 .navigation {
