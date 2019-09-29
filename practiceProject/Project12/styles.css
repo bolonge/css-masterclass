@@ -1,6 +1,6 @@
 :root {
   --borderRadius: 15px;
-  --grayColor: rgba(0, 0, 0, 0.5);
+  --greyColor: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -12,13 +12,137 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+html,
+body,
+p {
   margin: 0;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #fafafc;
-  padding: 0 15px;
+  background-color: #f4f4f4;
+  padding: 50px;
+  position: fixed;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.header .header__title {
+  font-size: 22px;
+}
+
+.header .header__title span,
+.header__subtitle span {
+  display: block;
+}
+.header__subtitle {
+  font-size: 60px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+}
+.content .content__sidebar {
+  grid-column: span 2;
+}
+
+.content .content__projects {
+  grid-column: span 3;
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+.box .box__title {
+  padding-bottom: 10px;
+  border-bottom: 3px solid black;
+  margin-bottom: 20px;
+}
+.box .box__categories {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box__category {
+  color: var(--greyColor);
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+.box__category:last-child {
+  margin-bottom: 0;
+}
+
+.box__category:hover {
+  transform: scaleY(1.2);
+  color: black;
+}
+
+.box .box__text {
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-columns: repeat(3, 300px);
+  grid-template-rows: 500px;
+  grid-auto-rows: 500px;
+  gap: 20px;
+  overflow: auto;
+}
+
+.project {
+  border-bottom: 3px solid black;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+.project .project__image {
+  width: 100%;
+  height: 230px;
+  margin-bottom: 15px;
+}
+
+.project .project__title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 3px;
+}
+.project .project__author {
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: var(--greyColor);
+}
+.project .project__date {
+  color: var(--greyColor);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.project .project__location {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+.project .project__intro {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.project .project__plus {
+  position: absolute;
+  bottom: 10px;
 }

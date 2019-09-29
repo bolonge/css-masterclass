@@ -1,6 +1,6 @@
 :root {
   --borderRadius: 15px;
-  --grayColor: rgba(0, 0, 0, 0.5);
+  --greyColor: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -37,12 +37,12 @@ body {
   font-size: 14px;
   margin-top: 10px;
   font-weight: 300;
-  color: var(--grayColor);
+  color: var(--greyColor);
 }
 
 .header__icon svg {
   width: 20px;
-  fill: var(--grayColor);
+  fill: var(--greyColor);
 }
 
 .header__icon:first-child {
@@ -108,8 +108,8 @@ body {
 
 .recipe__info .recipe__meta {
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--grayColor);
-  color: var(--grayColor);
+  border-bottom: 1px solid var(--greyColor);
+  color: var(--greyColor);
   font-weight: 400;
 }
 
@@ -126,7 +126,7 @@ body {
 
 .recipe__social-item svg {
   margin-left: 10px;
-  fill: var(--grayColor);
+  fill: var(--greyColor);
 }
 
 .recommended .recommended__header {
@@ -141,7 +141,7 @@ body {
 }
 
 .recommended__header .recommended__small {
-  color: var(--grayColor);
+  color: var(--greyColor);
 }
 
 .recommended__grid {
@@ -218,5 +218,5 @@ body {
 .recommended-recipe__info .recommended-recipe__subtitle {
   font-size: 6px;
   font-weight: 400;
-  color: var(--grayColor);
+  color: var(--greyColor);
 }

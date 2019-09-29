@@ -1,6 +1,6 @@
 :root {
   --borderRadius: 15px;
-  --grayColor: rgba(0, 0, 0, 0.6);
+  --greyColor: rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -62,7 +62,7 @@ main {
 
 .header__btns .header__btn {
   text-transform: uppercase;
-  color: var(--grayColor);
+  color: var(--greyColor);
   font-weight: 500;
 }
 
@@ -125,7 +125,7 @@ main {
 }
 .main__pages .main__total-page {
   font-size: 30px;
-  color: var(--grayColor);
+  color: var(--greyColor);
 }
 .navigation {
   width: 100%;
@@ -138,11 +138,11 @@ main {
   justify-content: space-between;
 }
 .navigation__icon svg {
-  fill: var(--grayColor);
+  fill: var(--greyColor);
 }
 .navigation__arrow {
   font-size: 55px;
-  color: var(--grayColor);
+  color: var(--greyColor);
 }
 
 .navigation__icon {
